@@ -4,7 +4,7 @@
       <el-col>
         <el-card>
           <div slot="header">
-            订阅转换
+            Subconverter
             <svg-icon
               icon-class="github"
               style="margin-left: 10px"
