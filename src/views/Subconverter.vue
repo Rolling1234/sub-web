@@ -212,7 +212,7 @@
                           <el-col>
                             <el-checkbox
                               v-model="form.nodeList"
-                              label="仅输出节点信息"
+                              label="输出Node List"
                               border
                               style="margin-top: 5.9px"
                             ></el-checkbox>
@@ -267,7 +267,7 @@
                               <el-row>
                                 <el-checkbox
                                   v-model="form.fdn"
-                                  label="过滤非法节点"
+                                  label="过滤无用节点"
                                 ></el-checkbox>
                               </el-row>
                               <el-row>
