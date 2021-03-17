@@ -22,7 +22,7 @@
           <el-container>
             <el-form
               :model="form"
-              label-width="80px"
+              label-width="100px"
               label-position="left"
               style="width: 100%"
             >
@@ -30,7 +30,7 @@
                 <el-radio v-model="advanced" label="1">Basic</el-radio>
                 <el-radio v-model="advanced" label="2">Advanced</el-radio>
               </el-form-item>
-              <el-form-item label="Link:">
+              <el-form-item label="Url:">
                 <el-input
                   v-model="form.sourceSubUrl"
                   type="textarea"
@@ -64,7 +64,7 @@
                   ></el-option>
                 </el-select>
               </el-form-item>
-              <el-form-item label="Short Url:">
+              <el-form-item label="Short url:">
                 <el-select
                   v-model="form.shortType"
                   allow-create
@@ -125,25 +125,25 @@
                       <el-form-item label="Include:">
                         <el-input
                           v-model="form.includeRemarks"
-                          placeholder="Nodes to include, support regular expressions"
+                          placeholder="Include nodes, support regular expressions"
                         />
                       </el-form-item>
                       <el-form-item label="Exclude:">
                         <el-input
                           v-model="form.excludeRemarks"
-                          placeholder="Nodes to exclude, support regular expressions"
+                          placeholder="Exclude nodes, support regular expressions"
                         />
                       </el-form-item>
                       <el-form-item label="Rename:">
                         <el-input
                           v-model="form.rename"
-                          placeholder="Use @ to rename"
+                          placeholder="Use @ to rename,examples:`HK@HK2``TW@TW2`"
                         />
                       </el-form-item>
-                      <el-form-item label="FileName:">
+                      <el-form-item label="File Name:">
                         <el-input
                           v-model="form.filename"
-                          placeholder="Displayed file name"
+                          placeholder="Name of the output file"
                         />
                       </el-form-item>
                       <el-form-item label-width="0px">
@@ -251,7 +251,7 @@
                   >
                 </el-input>
               </el-form-item>
-              <el-form-item label="Short Url:">
+              <el-form-item label="Short url:">
                 <el-input
                   class="copy-content"
                   disabled
@@ -277,7 +277,7 @@
                   type="danger"
                   @click="makeUrl"
                   :disabled="form.sourceSubUrl.length === 0"
-                  >Generate subscription</el-button
+                  >Get subscription</el-button
                 >
                 <el-button
                   style="width: 160px"
@@ -285,7 +285,7 @@
                   @click="makeShortUrl"
                   :loading="loading"
                   :disabled="customSubUrl.length === 0"
-                  >Short Link</el-button
+                  >Get short url</el-button
                 >
                 <!-- <el-button style="width: 120px" type="primary" @click="surgeInstall" icon="el-icon-connection">一键导入Surge</el-button> -->
               </el-form-item>
@@ -643,7 +643,9 @@ export default {
     },
     clashInstall() {
       if (this.customSubUrl === "") {
-        this.$message.error("Please fill in the required fields first to generate a link");
+        this.$message.error(
+          "Please fill in the required fields first to generate a link"
+        );
         return false;
       }
 
@@ -659,7 +661,9 @@ export default {
     },
     surgeInstall() {
       if (this.customSubUrl === "") {
-        this.$message.error("Please fill in the required fields first to generate a link");
+        this.$message.error(
+          "Please fill in the required fields first to generate a link"
+        );
         return false;
       }
 
@@ -770,7 +774,9 @@ export default {
     },
     makeShortUrl() {
       if (this.customSubUrl === "") {
-        this.$message.warning("Please subscribe to the link first, and then get the short link.");
+        this.$message.warning(
+          "Please subscribe to the link first, and then get the short link."
+        );
         return false;
       }
 
@@ -794,7 +800,9 @@ export default {
             this.$copyText(res.data.ShortUrl);
             this.$message.success("Copied");
           } else {
-            this.$message.error("Failed to get the short link：" + res.data.Message);
+            this.$message.error(
+              "Failed to get the short link：" + res.data.Message
+            );
           }
         })
         .catch(() => {
@@ -834,7 +842,9 @@ export default {
 
             this.dialogUploadConfigVisible = false;
           } else {
-            this.$message.error("Remote rules upload failed：" + res.data.Message);
+            this.$message.error(
+              "Remote rules upload failed：" + res.data.Message
+            );
           }
         })
         .catch(() => {
