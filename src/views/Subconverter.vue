@@ -411,7 +411,7 @@ export default {
           自动判断客户端: "auto",
         },
         shortTypes: {
-          "tlp.pw": "https://tlp.pw/",
+          "tlp.pw": "https://tlp.pw/short",
           "suo.yt": "https://suo.yt/short",
           "v1.mk": "https://v1.mk/short",
           "dlj.tf": "https://dlj.tf/short",
@@ -576,7 +576,7 @@ export default {
         sourceSubUrl: "",
         clientType: "",
         customBackend: "https://shaguo.link/sub?",
-        shortType: "https://tlp.pw/",
+        shortType: "https://tlp.pw/short",
         remoteConfig:
           "https://raw.githubusercontent.com/Dashaguo/My-rules/main/Myrules.ini",
         excludeRemarks: "",
