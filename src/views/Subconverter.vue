@@ -422,8 +422,8 @@ export default {
           "subcon.dlj.tf (subconverter作者后端)": "https://subcon.dlj.tf/sub?",
           "api.wcc.best (sub-web作者后端)": "https://api.wcc.best/sub?",
           "api.dler.io（lhie1后端）": "https://api.dler.io/sub?",
-          "api.sublink.dev（普拉斯公益后端）": "https://api.sublink.dev/sub?",
           "sub.id9.cc (品云☁️后端)": "https://sub.id9.cc/sub?",
+          "api.sublink.dev（普拉斯公益后端）": "https://api.sublink.dev/sub?",
         },
         backendOptions: [
           { value: "http://localhost:25500/sub?" },
@@ -431,8 +431,8 @@ export default {
           { value: "https://subcon.dlj.tf/sub?" },
           { value: "https://api.wcc.best/sub?" },
           { value: "https://api.dler.io/sub?" },
-          { value: "https://api.sublink.dev/sub?" },
           { value: "https://sub.id9.cc/sub?" },
+          { value: "https://api.sublink.dev/sub?" },
         ],
         remoteConfig: [
           {
@@ -446,6 +446,11 @@ export default {
                 label: "My rules",
                 value:
                   "https://raw.githubusercontent.com/Dashaguo/My-rules/main/Myrules.ini",
+              },
+              {
+                label: "Adguard",
+                value:
+                  "https://raw.githubusercontent.com/Dashaguo/My-rules/main/Adguard.ini",
               },
             ],
           },
@@ -512,31 +517,6 @@ export default {
           {
             label: "customized",
             options: [
-              {
-                label: "🍟A组去重+重命名",
-                value:
-                  "https://raw.githubusercontent.com/Dashaguo/My-rules/main/%F0%9F%8D%9FA%E7%BB%84.ini",
-              },
-              {
-                label: "🍟B组去重+重命名",
-                value:
-                  "https://raw.githubusercontent.com/Dashaguo/My-rules/main/%F0%9F%8D%9FB%E7%BB%84.ini",
-              },
-              {
-                label: "🍟C组去重+重命名",
-                value:
-                  "https://raw.githubusercontent.com/Dashaguo/My-rules/main/%F0%9F%8D%9FC%E7%BB%84.ini",
-              },
-              {
-                label: "🍟D组去重+重命名",
-                value:
-                  "https://raw.githubusercontent.com/Dashaguo/My-rules/main/%F0%9F%8D%9FD%E7%BB%84.ini",
-              },
-              {
-                label: "🍟E组去重+重命名",
-                value:
-                  "https://raw.githubusercontent.com/Dashaguo/My-rules/main/%F0%9F%8D%9FE%E7%BB%84.ini",
-              },
               {
                 label: "Maying",
                 value:
@@ -670,7 +650,7 @@ export default {
       window.open(url + this.customSubUrl);
     },
     gotovideo() {
-      this.$alert("别忘了关注友善的肥羊哦！", {
+      this.$alert("~", {
         type: "warning",
         confirmButtonText: "OK",
         customClass: "msgbox",
