@@ -448,6 +448,11 @@ export default {
                   "https://raw.githubusercontent.com/Dashaguo/My-rules/main/Myrules.ini",
               },
               {
+                label: "My rules For CFM",
+                value:
+                  "https://raw.githubusercontent.com/Dashaguo/My-rules/main/S.ini",
+              },
+              {
                 label: "Adguard",
                 value:
                   "https://raw.githubusercontent.com/Dashaguo/My-rules/main/Adguard.ini",
