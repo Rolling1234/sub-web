@@ -457,6 +457,11 @@ export default {
                 value:
                   "https://raw.githubusercontent.com/Dashaguo/My-rules/main/Adguard.ini",
               },
+              {
+                label: "🍟B组去重+重命名",
+                value:
+                  "https://raw.githubusercontent.com/Dashaguo/My-rules/main/%F0%9F%8D%9FB%E7%BB%84.ini",
+              },
             ],
           },
           {
