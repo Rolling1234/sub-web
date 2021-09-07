@@ -748,6 +748,8 @@ export default {
           this.form.tfo.toString() +
           "&fdn=" +
           this.form.fdn.toString() +
+          "&scv=" +
+          this.form.scv.toString() +
           "&sort=" +
           this.form.sort.toString();
 
