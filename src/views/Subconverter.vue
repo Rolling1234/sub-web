@@ -205,7 +205,7 @@
                               </el-row>
                               <el-row>
                                 <el-checkbox
-                                  v-model="form.csv"
+                                  v-model="form.scv"
                                   label="Skip certificate verification"
                                 ></el-checkbox>
                               </el-row>
