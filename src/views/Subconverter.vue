@@ -205,6 +205,12 @@
                               </el-row>
                               <el-row>
                                 <el-checkbox
+                                  v-model="form.csv"
+                                  label="Skip certificate verification"
+                                ></el-checkbox>
+                              </el-row>
+                              <el-row>
+                                <el-checkbox
                                   v-model="form.tpl.surge.doh"
                                   label="Surge.DoH"
                                 ></el-checkbox>
