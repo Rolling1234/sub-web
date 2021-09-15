@@ -418,7 +418,6 @@ export default {
         },
         shortTypes: {
           "suo.yt": "https://suo.yt/short",
-          "tlp.pw": "https://tlp.pw/short",
           "dlj.tf": "https://dlj.tf/short",
           "sub.cm": "https://sub.cm/short",
         },
@@ -571,7 +570,7 @@ export default {
         sourceSubUrl: "",
         clientType: "",
         customBackend: "https://shaguo.link/sub?",
-        shortType: "https://tlp.pw/short",
+        shortType: "https://sub.cm/short",
         remoteConfig:
           "https://raw.githubusercontent.com/Dashaguo/My-rules/main/Myrules.ini",
         excludeRemarks: "",
