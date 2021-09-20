@@ -424,7 +424,7 @@ export default {
         },
         customBackend: {
           "localhost:25500": "http://localhost:25500/sub?",
-          "shaguo.link（自用）": "https://shaguo.link/sub?",
+          "api.shaguo.gay（自用）": "https://api.shaguo.gay/sub?",
           "subcon.dlj.tf (subconverter作者后端)": "https://subcon.dlj.tf/sub?",
           "api.wcc.best (sub-web作者后端)": "https://api.wcc.best/sub?",
           "api.dler.io（lhie1后端）": "https://api.dler.io/sub?",
@@ -433,7 +433,7 @@ export default {
         },
         backendOptions: [
           { value: "http://localhost:25500/sub?" },
-          { value: "https://shaguo.link/sub?" },
+          { value: "https://api.shaguo.gay/sub?" },
           { value: "https://subcon.dlj.tf/sub?" },
           { value: "https://api.wcc.best/sub?" },
           { value: "https://api.dler.io/sub?" },
@@ -580,7 +580,7 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: "https://shaguo.link/sub?",
+        customBackend: "https://api.shaguo.gay/sub?",
         shortType: "https://tlp.pw/short",
         remoteConfig:
           "https://cdn.jsdelivr.net/gh/Dashaguo/My-rules@main/Myrules.ini",
