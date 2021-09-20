@@ -473,6 +473,11 @@ export default {
                 value:
                   "https://cdn.jsdelivr.net/gh/Dashaguo/My-rules@main/%F0%9F%8D%9FB%E7%BB%84.ini",
               },
+              {
+                label: "🍟E组去重+重命名",
+                value:
+                  "https://cdn.jsdelivr.net/gh/Dashaguo/My-rules@main/%F0%9F%8D%9FE%E7%BB%84.ini",
+              },
             ],
           },
           {
