@@ -464,6 +464,11 @@ export default {
                   "https://cdn.jsdelivr.net/gh/Dashaguo/My-rules@main/Adguard.ini",
               },
               {
+                label: "🍟A组去重+重命名",
+                value:
+                  "https://cdn.jsdelivr.net/gh/Dashaguo/My-rules@main/%F0%9F%8D%9FA%E7%BB%84.ini",
+              },
+              {
                 label: "🍟B组去重+重命名",
                 value:
                   "https://cdn.jsdelivr.net/gh/Dashaguo/My-rules@main/%F0%9F%8D%9FB%E7%BB%84.ini",
