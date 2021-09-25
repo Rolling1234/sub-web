@@ -453,32 +453,32 @@ export default {
               {
                 label: "My rules",
                 value:
-                  "https://cdn.jsdelivr.net/gh/Dashaguo/My-rules@main/Myrules.ini",
+                  "https://raw.githubusercontent.com/Dashaguo/My-rules/main/Myrules.ini",
               },
               {
                 label: "My rules For CFM",
                 value:
-                  "https://cdn.jsdelivr.net/gh/Dashaguo/My-rules@main/CFM.ini",
+                  "https://raw.githubusercontent.com/Dashaguo/My-rules/main/CFM.ini",
               },
               {
                 label: "Adguard",
                 value:
-                  "https://cdn.jsdelivr.net/gh/Dashaguo/My-rules@main/Adguard.ini",
+                  "https://raw.githubusercontent.com/Dashaguo/My-rules/main/Adguard.ini",
               },
               {
                 label: "🍟A组去重+重命名",
                 value:
-                  "https://cdn.jsdelivr.net/gh/Dashaguo/My-rules@main/%F0%9F%8D%9FA%E7%BB%84.ini",
+                  "https://raw.githubusercontent.com/Dashaguo/My-rules/main/%F0%9F%8D%9FA%E7%BB%84.ini",
               },
               {
                 label: "🍟B组去重+重命名",
                 value:
-                  "https://cdn.jsdelivr.net/gh/Dashaguo/My-rules@main/%F0%9F%8D%9FB%E7%BB%84.ini",
+                  "https://raw.githubusercontent.com/Dashaguo/My-rules/main/%F0%9F%8D%9FB%E7%BB%84.ini",
               },
               {
                 label: "🍟E组去重+重命名",
                 value:
-                  "https://cdn.jsdelivr.net/gh/Dashaguo/My-rules@main/%F0%9F%8D%9FE%E7%BB%84.ini",
+                  "https://raw.githubusercontent.com/Dashaguo/My-rules/main/%F0%9F%8D%9FE%E7%BB%84.ini",
               },
             ],
           },
