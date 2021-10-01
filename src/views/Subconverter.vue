@@ -585,7 +585,7 @@ export default {
         customBackend: "https://shaguo.gay/sub?",
         shortType: "https://tlp.pw/short",
         remoteConfig:
-          "https://cdn.jsdelivr.net/gh/Dashaguo/My-rules@main/Myrules.ini",
+          "https://raw.githubusercontent.com/Dashaguo/My-rules/main/Myrules.ini",
         excludeRemarks: "",
         includeRemarks: "",
         filename: "",
