@@ -417,14 +417,15 @@ export default {
           自动判断客户端: "auto",
         },
         shortTypes: {
-          "tlp.pw": "https://tlp.pw/short",
+          "opi.lol": "https://opi.lol/short",
           "suo.yt": "https://suo.yt/short",
+          "v1.mk": "https://v1.mk/short",
           "dlj.tf": "https://dlj.tf/short",
           "sub.cm": "https://sub.cm/short",
         },
         customBackend: {
           "localhost:25500": "http://localhost:25500/sub?",
-          "myasuka.tech（自用）": "https://myasuka.tech/sub?",
+          "api.opi.lol（自用）": "https://api.opi.lol/sub?",
           "subcon.dlj.tf (subconverter作者后端)": "https://subcon.dlj.tf/sub?",
           "api.wcc.best (sub-web作者后端)": "https://api.wcc.best/sub?",
           "api.dler.io（lhie1后端）": "https://api.dler.io/sub?",
@@ -433,7 +434,7 @@ export default {
         },
         backendOptions: [
           { value: "http://localhost:25500/sub?" },
-          { value: "https://myasuka.tech/sub?" },
+          { value: "https://api.opi.lol/sub?" },
           { value: "https://subcon.dlj.tf/sub?" },
           { value: "https://api.wcc.best/sub?" },
           { value: "https://api.dler.io/sub?" },
@@ -451,32 +452,17 @@ export default {
               {
                 label: "My rules",
                 value:
-                  "https://raw.githubusercontent.com/Dashaguo/My-rules/main/Myrules.ini",
+                  "https://raw.githubusercontent.com/Dashaguo/My-rules/main/My-rules%202.ini",
               },
               {
-                label: "My rules For CFM",
+                label: "My rules（Fake-ip）",
                 value:
-                  "https://raw.githubusercontent.com/Dashaguo/My-rules/main/CFM.ini",
+                  "https://raw.githubusercontent.com/Dashaguo/My-rules/main/Fakeip.ini",
               },
               {
                 label: "Adguard",
                 value:
                   "https://raw.githubusercontent.com/Dashaguo/My-rules/main/Adguard.ini",
-              },
-              {
-                label: "🍟A组去重+重命名",
-                value:
-                  "https://raw.githubusercontent.com/Dashaguo/My-rules/main/%F0%9F%8D%9FA%E7%BB%84.ini",
-              },
-              {
-                label: "🍟B组去重+重命名",
-                value:
-                  "https://raw.githubusercontent.com/Dashaguo/My-rules/main/%F0%9F%8D%9FB%E7%BB%84.ini",
-              },
-              {
-                label: "🍟E组去重+重命名",
-                value:
-                  "https://raw.githubusercontent.com/Dashaguo/My-rules/main/%F0%9F%8D%9FE%E7%BB%84.ini",
               },
             ],
           },
@@ -580,10 +566,10 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: "https://myasuka.tech/sub?",
-        shortType: "https://tlp.pw/short",
+        customBackend: "https://api.opi.lol/sub?",
+        shortType: "https://opi.lol/short",
         remoteConfig:
-          "https://raw.githubusercontent.com/Dashaguo/My-rules/main/Myrules.ini",
+          "https://raw.githubusercontent.com/Dashaguo/My-rules/main/My-rules%202.ini",
         excludeRemarks: "",
         includeRemarks: "",
         filename: "",
@@ -623,7 +609,7 @@ export default {
     };
   },
   created() {
-    document.title = "砂锅的Subconverter";
+    document.title = "Subconverter";
     this.isPC = this.$getOS().isPc;
   },
   mounted() {
